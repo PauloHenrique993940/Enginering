@@ -1,0 +1,147 @@
+.section {
+    padding: 88px 0;
+    background: #101113;
+    color: #f7f7f4;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header {
+    max-width: 780px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    border: 1px solid #4a4b4d;
+    border-radius: 999px;
+    padding: 7px 22px;
+    color: #c8c8c5;
+    font-size: 0.85rem;
+}
+
+.title {
+    margin: 18px 0 14px;
+    color: #ffc107;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.description {
+    color: #dadad6;
+    font-size: 1.15rem;
+    line-height: 1.45;
+}
+
+.topCards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 30px;
+    background:
+        linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.05) 72%),
+        url("https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?auto=format&fit=crop&w=1200&q=85") center / cover no-repeat;
+}
+
+.missionCard {
+    background-position: 72% center;
+}
+
+.card h3,
+.values h3 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+}
+
+.card p {
+    max-width: 500px;
+    margin: 12px 0 0;
+    color: #e3e3df;
+    line-height: 1.35;
+}
+
+.values {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 28px 48px 34px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.78)),
+        url("https://images.unsplash.com/photo-1717386255773-1e3037c81788?auto=format&fit=crop&w=1400&q=85") center 70% / cover no-repeat;
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px 64px;
+    max-width: 850px;
+    margin: 28px auto 0;
+}
+
+.valueCard {
+    min-height: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(255, 193, 7, 0.68);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.valueCard h4 {
+    margin: 0;
+    color: #ffc107;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+.valueCard p {
+    margin: 10px 0 0;
+    color: #dededb;
+    font-size: 0.9rem;
+    line-height: 1.25;
+}
+
+@media (max-width: 700px) {
+    .section {
+        padding: 64px 0;
+    }
+
+    .topCards,
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 240px;
+        padding: 24px;
+    }
+
+    .values {
+        padding: 28px 20px;
+    }
+
+    .valuesGrid {
+        gap: 14px;
+    }
+}

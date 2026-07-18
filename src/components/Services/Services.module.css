@@ -1,0 +1,236 @@
+.services {
+    overflow: hidden;
+    padding: 88px 0;
+    background: #101113;
+    color: #f7f7f4;
+}
+
+.servicesHeader,
+.timelineHeader {
+    max-width: 760px;
+    margin: 0 auto 38px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    border: 1px solid #4a4b4d;
+    border-radius: 999px;
+    padding: 7px 22px;
+    color: #c8c8c5;
+    font-size: 0.85rem;
+}
+
+.servicesHeader h2,
+.timelineHeader h2 {
+    margin: 18px 0 14px;
+    color: #ffc107;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.7rem, 4vw, 2.55rem);
+    font-weight: 800;
+    line-height: 1.08;
+    text-transform: uppercase;
+}
+
+.servicesHeader p,
+.timelineHeader p {
+    margin: 0;
+    color: #dadad6;
+    line-height: 1.45;
+}
+
+.serviceScroller {
+    overflow-x: auto;
+    padding: 0 max(24px, calc((100vw - 1160px) / 2)) 16px;
+    scrollbar-color: #ffc107 #202124;
+}
+
+.serviceTrack {
+    display: flex;
+    gap: 18px;
+    width: max-content;
+}
+
+.serviceCard {
+    width: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f1f1ed;
+    color: #151515;
+}
+
+.serviceImage {
+    height: 190px;
+    background-image: url("https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=85");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.design {
+    background-image: url("https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?auto=format&fit=crop&w=800&q=85");
+    background-position: 20% center;
+}
+
+.engineering {
+    background-image: url("https://images.unsplash.com/photo-1717386255773-1e3037c81788?auto=format&fit=crop&w=800&q=85");
+    background-position: 55% center;
+}
+
+.procurement {
+    background-image: url("https://images.unsplash.com/photo-1547895749-888a559fc2a7?auto=format&fit=crop&w=800&q=85");
+    background-position: 84% center;
+}
+
+.field {
+    background-image: url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=85");
+    background-position: 40% center;
+}
+
+.cardBody {
+    position: relative;
+    min-height: 235px;
+    padding: 34px 20px 22px;
+}
+
+.accent {
+    position: absolute;
+    top: -28px;
+    left: 20px;
+    width: 42px;
+    height: 42px;
+    background: #ffc107;
+}
+
+.cardBody h3 {
+    margin: 0 0 14px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.18rem;
+    line-height: 1.15;
+}
+
+.cardBody ul {
+    margin: 0;
+    padding-left: 16px;
+}
+
+.cardBody li {
+    margin-bottom: 7px;
+    font-size: 0.82rem;
+    line-height: 1.2;
+}
+
+.timelineSection {
+    margin-top: 88px;
+    padding: 72px 0 0;
+    background:
+    linear-gradient(90deg, rgba(16, 17, 19, 0.96), rgba(55, 42, 7, 0.76), rgba(16, 17, 19, 0.96)),
+    url("https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?auto=format&fit=crop&w=1600&q=85") center / cover no-repeat;
+}
+
+.timeline {
+    display: flex;
+    position: relative;
+    max-width: 1160px;
+    margin: 60px auto 0;
+    padding: 0 24px 80px;
+}
+
+.milestone {
+    position: relative;
+    display: grid;
+    grid-template-rows: 88px 18px 88px;
+    flex: 1 0 0;
+    min-width: 145px;
+    align-items: center;
+}
+
+.milestone:nth-child(even) .milestoneCard {
+    grid-row: 3;
+}
+
+.milestoneCard {
+    z-index: 1;
+    max-width: 145px;
+    min-height: 72px;
+    padding: 11px;
+    border: 1px solid rgba(255, 193, 7, 0.5);
+    background: rgba(11, 12, 13, 0.9);
+    text-align: center;
+}
+
+.milestoneCard strong {
+    color: #ffc107;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+}
+
+.milestoneCard p {
+    margin: 7px 0 0;
+    color: #e7e7e2;
+    font-size: 0.67rem;
+    line-height: 1.2;
+}
+
+.timelinePoint {
+    z-index: 2;
+    grid-row: 2;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffc107;
+    border-radius: 50%;
+    background: #171204;
+}
+
+.timelineLine {
+    position: absolute;
+    top: 97px;
+    left: 10px;
+    right: 0;
+    height: 2px;
+    background: rgba(255, 193, 7, 0.65);
+}
+
+@media (max-width: 700px) {
+    .services {
+        padding: 64px 0;
+    }
+
+    .serviceScroller {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .timelineSection {
+        margin-top: 64px;
+    }
+
+    .timeline {
+        display: grid;
+        gap: 14px;
+        margin-top: 38px;
+        padding-bottom: 56px;
+    }
+
+    .milestone {
+        display: block;
+        min-width: 0;
+        padding-left: 28px;
+    }
+
+    .milestoneCard,
+    .milestone:nth-child(even) .milestoneCard {
+        max-width: none;
+    }
+
+    .timelinePoint {
+        position: absolute;
+        top: 24px;
+        left: 0;
+    }
+
+    .timelineLine,
+    .milestoneSpacer {
+        display: none;
+    }
+}

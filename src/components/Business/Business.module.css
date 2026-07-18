@@ -1,0 +1,122 @@
+.business {
+    padding: 88px 0;
+    background: #101113;
+    color: #f7f7f4;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header {
+    max-width: 780px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    border: 1px solid #4a4b4d;
+    border-radius: 999px;
+    padding: 7px 22px;
+    color: #c8c8c5;
+    font-size: 0.85rem;
+}
+
+.header h2 {
+    margin: 18px 0 14px;
+    color: #ffc107;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 800;
+    line-height: 1.08;
+    text-transform: uppercase;
+}
+
+.header p {
+    margin: 0;
+    color: #dadad6;
+    font-size: 1.15rem;
+    line-height: 1.45;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.card {
+    min-height: 320px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #252629;
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.06) 72%),
+        url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1200&q=85");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.eHouse {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.06) 72%), url("https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?auto=format&fit=crop&w=900&q=85");
+    background-position: 26% center;
+}
+
+.instrumentation {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.06) 72%), url("https://images.unsplash.com/photo-1717386255773-1e3037c81788?auto=format&fit=crop&w=900&q=85");
+    background-position: 55% center;
+}
+
+.procurement {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.06) 72%), url("https://images.unsplash.com/photo-1547895749-888a559fc2a7?auto=format&fit=crop&w=900&q=85");
+    background-position: 85% center;
+}
+
+.cardContent {
+    width: 100%;
+    padding: 28px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.45rem;
+    line-height: 1.12;
+}
+
+.card p {
+    margin: 12px 0 0;
+    color: #e6e6e2;
+    font-size: 0.95rem;
+    line-height: 1.35;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 700px) {
+    .business {
+        padding: 64px 0;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .cardContent {
+        padding: 24px;
+    }
+}
